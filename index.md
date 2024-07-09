@@ -1,5 +1,3 @@
-### `index.md`
-```markdown
 # Welcome to My Personal Page
 
 Welcome to the personal webpage of **Anamika Agrawal**.
@@ -10,4 +8,3 @@ Welcome to the personal webpage of **Anamika Agrawal**.
 - [Research](research.md)
 - [Miscellaneous](misc.md)
 - [Contact](contact.md)
-```
