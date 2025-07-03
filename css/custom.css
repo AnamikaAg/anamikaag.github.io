@@ -1,0 +1,116 @@
+body {
+    background-color: #fdfaf5;
+    color: #2e2a2a;
+    font-family: 'Inter', sans-serif;
+    
+  }
+  
+  h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+    color: #b76e79;
+  }
+  
+  a {
+    color: #b76e79;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: #984447;
+  }
+  
+  .navbar {
+    background-color: #fffaf2;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+.post-content,
+.card,
+.container,
+.content {
+  background-color: transparent !important;
+  color: inherit;
+  box-shadow: none;
+}
+
+.card,
+.post-content,
+.container {
+  box-shadow: none !important;
+  border: none !important;
+}
+body.single,
+.single .post-content {
+  background-color: #fdfaf5 !important;
+  color: #2e2a2a !important;
+}
+.intro-header,
+.header-section,
+.jumbotron,
+header.intro-header {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  color: inherit;
+}
+
+header.intro-header .container {
+    background: transparent !important;
+  }
+  
+  body.home {
+    background-color: #fdfaf5;
+    color: #2e2a2a;
+  }
+  
+/* Remove dark background and ensure visibility for text/image */
+header.intro-header,
+.intro-header,
+header.intro-header .site-heading,
+header.intro-header .container {
+  background-color: transparent !important;
+  background-image: none !important;
+  color: #2e2a2a !important; /* your body font color */
+}
+
+/* Optional: make sure .site-heading text (title/subtitle) is readable */
+.site-heading h1,
+.site-heading .subheading {
+  color: #2e2a2a !important;
+}
+.homepage-content {
+  background-color: #fdfaf5;
+  color: #2e2a2a;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.posts-list {
+  background-color: #fdfaf5;
+  color: #2e2a2a;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+/* Remove dark background globally */
+.intro-header,
+.intro-header.no-img,
+.header-section {
+  background-color: #fdfaf5 !important;  /* or white or any light color */
+  background-image: none !important;
+  color: #2e2a2a !important; /* optional: match your preferred font color */
+}
+
+/* Optional: fix inner headings */
+.intro-header h1,
+.intro-header h2,
+.intro-header .subheading {
+  color: #2e2a2a !important;
+}

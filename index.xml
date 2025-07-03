@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shared Brain Cell</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Shared Brain Cell</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>anamika.hanu@gmail.com (Anamika Agrawal)</managingEditor>
+    <webMaster>anamika.hanu@gmail.com (Anamika Agrawal)</webMaster>
+    <lastBuildDate>Wed, 02 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/page/about/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate><author>anamika.hanu@gmail.com (Anamika Agrawal)</author>
+      <guid>http://localhost:1313/page/about/</guid>
+      <description>&lt;p&gt;Hi! I’m Anamika Agrawal  - a systems neuroscientist and computational modeler fascinated by how structure shapes function in the brain. My work draws on physics, biology, and mathematics to model intracellular dynamics, neural computation, and disease progression.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m currently a Shanahan Foundation Fellow at the Allen Institute and the University of Washington. Outside of science, I enjoy writing, building tools that make research more intuitive, and sharing a brain cell with my two cats, Twix and Munch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sink or Swim and the glue labor of academia</title>
+      <link>http://localhost:1313/post/firstpost/</link>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate><author>anamika.hanu@gmail.com (Anamika Agrawal)</author>
+      <guid>http://localhost:1313/post/firstpost/</guid>
+      <description>&lt;p&gt;Allen Institute recently &lt;a href=&#34;https://alleninstitute.org/news/sink-or-swim-navigating-the-deep-waters-of-neuroscience-research/&#34;&gt;featured me and my research&lt;/a&gt;. When I re-read my replies to most answers, I realized that a lot of my nearly 3 years of fellowship were spent on &lt;a href=&#34;https://www.noidea.dog/glue&#34;&gt;&amp;lsquo;glue work&amp;rsquo;&lt;/a&gt; - work that will not feature on my CV, or even help me look flashy in job applications, but somebody had to do it. Maybe I was not so subtle in pointing it out that the toughest part of an independent postdoctoral fellowship, or heck, academia, is willingly taking on the glue work so that research can go on.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
