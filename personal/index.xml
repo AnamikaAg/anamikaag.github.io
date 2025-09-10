@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shared Brain Cell</title>
-    <link>https://anamikaag.github.io/</link>
-    <description>Recent content on Shared Brain Cell</description>
+    <title>Personal Blog on Shared Brain Cell</title>
+    <link>https://anamikaag.github.io/personal/</link>
+    <description>Recent content in Personal Blog on Shared Brain Cell</description>
     <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>anamika.hanu@gmail.com (Anamika Agrawal)</managingEditor>
     <webMaster>anamika.hanu@gmail.com (Anamika Agrawal)</webMaster>
     <lastBuildDate>Wed, 02 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://anamikaag.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About Me</title>
-      <link>https://anamikaag.github.io/page/about/</link>
-      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate><author>anamika.hanu@gmail.com (Anamika Agrawal)</author>
-      <guid>https://anamikaag.github.io/page/about/</guid>
-      <description>&lt;p&gt;Hi! I’m Anamika Agrawal  - a systems neuroscientist and computational modeler fascinated by how structure shapes function in the brain. My work draws on physics, biology, and mathematics to model intracellular dynamics, neural computation, and disease progression.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m currently a Shanahan Foundation Fellow at the Allen Institute and the University of Washington. Outside of science, I enjoy writing, building tools that make research more intuitive, and sharing a brain cell with my two cats, Twix and Munch.&lt;/p&gt;</description>
-    </item>
+    <atom:link href="https://anamikaag.github.io/personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sink or Swim and the glue labor of academia</title>
       <link>https://anamikaag.github.io/personal/firstpost/</link>
