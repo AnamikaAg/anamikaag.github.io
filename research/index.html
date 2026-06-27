@@ -216,31 +216,76 @@
 
     
 <main class="container py-5">
-  <div><p>The brain computes under constraint. Every dendritic integration event, every synaptic change, every organelle repositioning reflects a solution to the problem of adaptive function within limits on energy, space, and molecular machinery.</p>
+  <div><p>The brain computes under constraint. Every dendritic integration event, every synaptic change, and every organelle repositioning reflects a solution to the problem of adaptive function within limits on energy, space, and molecular machinery.</p>
 <p>My research asks: what are those limits, how do they shape computation and learning, and when do they become the conditions for failure? I work at the intermediate scale, sitting between molecular mechanisms and systems-level behavior, developing computational models that are biophysically grounded, analytically interpretable, and testable against existing datasets.</p>
 <hr>
+<h3 id="why-the-intermediate-scale">Why the intermediate scale?</h3>
+<div class="research-figure research-figure--intermediate" role="group" aria-label="Why this scale">
+  <img
+    src="/images/research/intermediate-scale.svg"
+    alt="Diagram spanning genes, proteins, organelles, neurons, circuits, and behavior. The organelle-to-neuron scale is presented as a bridge between molecular mechanisms and systems-level dysfunction."
+    loading="lazy"
+  >
+  <p class="research-figure__caption">
+    <strong>Why this scale?</strong> I study cellular organization because morphology, organelle dynamics, and synaptic structure provide measurable links between molecular mechanisms and systems-level function or dysfunction.
+  </p>
+</div>
+
+<p>At this scale, structural organization becomes a predictive scaffold: it can connect molecular and cellular mechanisms to a neuron&rsquo;s computational role, its capacity to adapt, and its vulnerability under stress.</p>
+<hr>
+<h3 id="how-the-pieces-fit">How the pieces fit</h3>
+<section class="research-program" data-research-program aria-labelledby="research-program-title">
+  <div class="research-figure research-figure--program" role="group" aria-label="Interactive research program schematic">
+    <img
+      src="/images/research/research-program.svg"
+      alt="Research program schematic. Dendritic morphology, synaptic organization, intracellular dynamics, and circuit anatomy constrain a computational design space, cell-type-specific plasticity rules, and energetic vulnerability."
+      loading="lazy"
+    >
+
+    <button class="research-program__hotspot research-program__hotspot--compute" type="button" data-program-mode="compute" aria-controls="research-program-detail" aria-label="Explore computation: go to neuronal morphology and computational complexity">
+      <span>Compute</span>
+    </button>
+
+    <button class="research-program__hotspot research-program__hotspot--learn" type="button" data-program-mode="learn" aria-controls="research-program-detail" aria-label="Explore learning: reveal how morphology may shape plasticity">
+      <span>Learn</span>
+    </button>
+
+    <button class="research-program__hotspot research-program__hotspot--fail" type="button" data-program-mode="fail" aria-controls="research-program-detail" aria-label="Explore vulnerability: reveal links to disease trajectories and metabolic resilience">
+      <span>Fail</span>
+    </button>
+  </div>
+
+  <p class="research-program__prompt" id="research-program-title">Select an aim in the figure to see how it connects to the work below.</p>
+
+  <div id="research-program-detail" class="research-program__detail" aria-live="polite" hidden></div>
+</section>
+
+<hr>
+<p><span id="morphology-computation"></span></p>
 <h3 id="neuronal-morphology-and-computational-complexity">Neuronal Morphology and Computational Complexity</h3>
 <p>How much does the shape of a neuron determine what it can compute?</p>
 <p>Neurons are not simple threshold units. Their dendrites branch, compartmentalize, and integrate inputs in spatially structured ways, and that structure is not incidental. In this line of work, I&rsquo;ve developed scalable models that treat dendritic architecture as a formal constraint on computational complexity, asking which classes of input-output functions a neuron can learn given its morphology, and how efficiently it can adapt between tasks.</p>
-<p>The key finding: branching structure places quantifiable bounds on a neuron&rsquo;s computational capacity, and the geometry of those branches (whether shallow and broad, or deep and hierarchical) determines not just <em>what</em> a neuron can compute, but <em>how robustly</em> it can do so. Apical-like and basal-like architectures turn out to learn qualitatively different sets of functions, with distinct tradeoffs in generality and retraining speed.</p>
-<p><strong>Agrawal A, Buice MA (2025).</strong> Bounds on the computational complexity of neurons due to dendritic morphology. <em>NeurIPS 2025</em>. <a href="https://www.biorxiv.org/content/10.1101/2025.07.11.664448v1">bioRxiv</a></p>
+<p>The key finding: branching structure places quantifiable bounds on a neuron&rsquo;s computational capacity, and the geometry of those branches - whether shallow and broad, or deep and hierarchical - determines not just <em>what</em> a neuron can compute, but <em>how robustly</em> it can do so. Apical-like and basal-like architectures turn out to learn qualitatively different sets of functions, with distinct tradeoffs in generality and retraining speed.</p>
+<p><strong>Agrawal A, Buice MA (2025).</strong> Bounds on the computational complexity of neurons due to dendritic morphology. <em>NeurIPS 2025</em>. <a href="https://proceedings.neurips.cc/paper_files/paper/2025/file/d9e56606b1bd3095fbb4241c4e15e420-Paper-Conference.pdf">Conference paper</a></p>
 <hr>
+<p><span id="disease-trajectories"></span></p>
 <h3 id="bayesian-inference-of-neurodegenerative-progression">Bayesian Inference of Neurodegenerative Progression</h3>
 <p>How does Alzheimer&rsquo;s disease spread, which cells are most vulnerable, and can we infer this from cross-sectional human data?</p>
-<p>In collaboration with Mariano Gabitto and Gonzalo Mena (Allen Institute / CMU), I developed <strong>B-BIND</strong> (Biophysical Bayesian Inference for Neurodegenerative Dynamics): a generative model that reconstructs continuous disease trajectories from snapshots of human neuropathology data, embedding physical priors on protein aggregation, transport, and cell density. The framework infers a pseudotemporal disease axis, without requiring longitudinal data that is ethically and practically impossible to collect from human brain tissue.</p>
-<p>B-BIND was first applied to the Seattle Alzheimer&rsquo;s Disease Brain Cell Atlas (SEA-AD), the first multimodal single-cell atlas of Alzheimer&rsquo;s disease in humans, predicting vulnerability patterns of neuronal and non-neuronal cells in the Middle Temporal Gyrus (MTG) region of the brain. The framework is now being extended across the brain: a recent SEA-AD consortium preprint applied an updated version of B-BIND to the caudate nucleus, incorporating two independent processes to capture the distinct dynamics of amyloid and tau pathology in subcortical regions. Multiregion extensions are ongoing.</p>
-<p><strong>Agrawal A*, Rachleff VM, Travaglini KJ, et al. (2024).</strong> B-BIND: Biophysical Bayesian Inference for Neurodegenerative Dynamics. <em>Annals of Applied Statistics</em> (in press). <a href="https://www.biorxiv.org/content/10.1101/2024.06.10.597236v2.full">bioRxiv</a></p>
-<p><strong>Gabitto MI, Travaglini KJ, Rachleff VM, &hellip;, Agrawal A, &hellip;, et al. (2024).</strong> Integrated multimodal cell atlas of Alzheimer&rsquo;s disease. <em>Nature Neuroscience</em>. <a href="https://www.nature.com/articles/s41593-024-01774-5">Link</a></p>
-<p><strong>Kana OZ, Postupna N, Agrawal A, et al. (2026).</strong> The Caudate Nucleus Exhibits Distinct Pathology and Cell Type-Specific Responses Across Alzheimer&rsquo;s Disease. <em>bioRxiv</em>. <a href="https://www.biorxiv.org/content/10.64898/2026.01.10.694705v2">Link</a></p>
+<p>In collaboration with Mariano Gabitto and Gonzalo Mena (Allen Institute / CMU), I developed <strong>B-BIND</strong> (Biophysical Bayesian Inference for Neurodegenerative Dynamics): a generative model that reconstructs continuous disease trajectories from snapshots of human neuropathology data, embedding physical priors on protein aggregation, transport, and cell density. The framework infers a pseudotemporal disease axis without requiring longitudinal data that is ethically and practically impossible to collect from human brain tissue.</p>
+<p>B-BIND was first applied to the Seattle Alzheimer&rsquo;s Disease Brain Cell Atlas (SEA-AD), an integrated multimodal atlas of Alzheimer&rsquo;s disease in humans, to model vulnerability patterns of neuronal and non-neuronal cells in the middle temporal gyrus. The framework is now being extended across the brain: a recent SEA-AD consortium preprint applied an updated version of B-BIND to the caudate nucleus, incorporating two independent processes to capture the distinct dynamics of amyloid and tau pathology in subcortical regions. Multiregion extensions are ongoing.</p>
+<p><strong>Agrawal A*, Rachleff VM, Travaglini KJ, et al. (2026).</strong> B-BIND: Biophysical Bayesian inference for neurodegenerative dynamics. <em>The Annals of Applied Statistics, 20</em>(1), 285-306. <a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-20/issue-1/B-BIND-Biophysical-Bayesian-inference-for-neurodegenerative-dynamics/10.1214/25-AOAS2078.full">Journal article</a></p>
+<p><strong>Gabitto MI, Travaglini KJ, Rachleff VM, &hellip;, Agrawal A, &hellip;, et al. (2024).</strong> Integrated multimodal cell atlas of Alzheimer&rsquo;s disease. <em>Nature Neuroscience</em>. <a href="https://www.nature.com/articles/s41593-024-01774-5">Article</a></p>
+<p><strong>Kana OZ, Postupna N, Agrawal A, et al. (2026).</strong> The Caudate Nucleus Exhibits Distinct Pathology and Cell Type-Specific Responses Across Alzheimer&rsquo;s Disease. <em>bioRxiv</em>. <a href="https://www.biorxiv.org/content/10.64898/2026.01.10.694705v2">Preprint</a></p>
 <hr>
+<p><span id="metabolic-resilience"></span></p>
 <h3 id="intracellular-transport-and-metabolic-resilience">Intracellular Transport and Metabolic Resilience</h3>
 <p><em>(PhD work, UC San Diego, Elena Koslover lab)</em></p>
-<p>How do neurons (cells that can extend millimeters or even meters) maintain metabolic stability in their most distal branches?</p>
+<p>How do neurons - cells that can extend millimeters or even meters - maintain metabolic stability in their most distal branches?</p>
 <p>My PhD research used analytical and agent-based models to study how mitochondrial transport and turnover act as a distributed control system for neuronal energy supply. The key insight is that mitochondrial dynamics (transport/fusion/fission/autophagy) and their associated regulatory mechanisms couple local metabolic demand and supply to organelle positioning in ways that allow neurons to sustain activity even at large distances from the soma.</p>
 <p>In collaboration with Erin Barnhart&rsquo;s lab (Columbia), we extended these models to <em>Drosophila</em> neurons and showed that dendritic geometry alone can enforce equitable mitochondrial distribution across branches, with structure doing the work that active regulation might otherwise require.</p>
-<p><strong>Donovan EJ*, Agrawal A*, et al. (2024).</strong> Dendrite architecture determines mitochondrial distribution patterns in vivo. <em>Cell Reports 43</em>. <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(24)00518-7">Link</a></p>
-<p><strong>Agrawal A, Koslover EF (2021).</strong> Optimizing mitochondrial maintenance in extended neuronal projections. <em>PLoS Computational Biology 17</em>, e1009073. <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009073">Link</a></p>
-<p><strong>Agrawal A, Pekkurnaz G, Koslover EF (2018).</strong> Spatial control of neuronal metabolism through glucose-mediated mitochondrial transport regulation. <em>eLife 7</em>, e40986. <a href="https://elifesciences.org/articles/40986">Link</a></p>
+<p><strong>Donovan EJ*, Agrawal A*, et al. (2024).</strong> Dendrite architecture determines mitochondrial distribution patterns in vivo. <em>Cell Reports, 43</em>. <a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(24)00518-7">Article</a></p>
+<p><strong>Agrawal A, Koslover EF (2021).</strong> Optimizing mitochondrial maintenance in extended neuronal projections. <em>PLoS Computational Biology, 17</em>, e1009073. <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009073">Article</a></p>
+<p><strong>Agrawal A, Pekkurnaz G, Koslover EF (2018).</strong> Spatial control of neuronal metabolism through glucose-mediated mitochondrial transport regulation. <em>eLife, 7</em>, e40986. <a href="https://elifesciences.org/articles/40986">Article</a></p>
 </div>
 </main>
 
@@ -333,6 +378,9 @@
 
 
 
+
+
+<script src="/js/research-program-map.js" defer></script>
 
 
     
